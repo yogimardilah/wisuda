@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Wisuda</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	<div id="wrapper">
+	<%= render 'shareds/navbar_top' %>
+		<div id="page-wrapper">
+			<div class="container-fluid">
+				<%= render 'shareds/title_breadcumbs' %>
+				<%= yield %>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

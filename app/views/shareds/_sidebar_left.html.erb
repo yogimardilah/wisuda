@@ -1,0 +1,27 @@
+<div class="collapse navbar-collapse navbar-ex1-collapse">
+  <ul class="nav navbar-nav side-nav">
+    <li class="active">
+      <%= link_to root_path do %>
+        <i class="fa fa-fw fa-dashboard"></i> Dashboard
+      <% end %>
+    </li>
+    <li>
+      <a href="javascript:;" data-toggle="collapse" data-target="#demo">
+        <i class="fa fa-fw fa-arrows-v"></i> Products 
+        <i class="fa fa-fw fa-caret-down"></i>
+      </a>
+      <ul id="demo" class="collapse">
+        <li>
+          <%= link_to new_product_path do %>
+            New Data
+          <% end %>
+        </li>
+        <li>
+          <%= link_to products_path do %>
+            List Data
+          <% end %>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
